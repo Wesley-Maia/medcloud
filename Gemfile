@@ -49,6 +49,9 @@ group :development, :test do
 
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
+
+  gem "rspec-rails"            # Para testes (futuro)
+  gem "factory_bot_rails"      # Para fixtures (futuro)
 end
 
 group :development do
@@ -61,3 +64,9 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+# Gemfile - Adicionar no final
+gem "devise"                     # Para autenticação
+gem "sassc-rails"                # Processador Sass
+gem "image_processing", "~> 1.2" # Para processamento de imagens
+
